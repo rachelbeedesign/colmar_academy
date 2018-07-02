@@ -6,11 +6,18 @@
     <link rel="stylesheet" type="text/css" href="./resources/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="./resources/css/mediaquery.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   </head>
   <body>
 
 
-    <header>
+<!--
+
+    HEADER: DESKTOP AND MOBILE VERSION
+
+-->
+    <header class="desktop">
       <div>
         <img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo - Lion.">
         <h2><strong>Colmar</strong>Academy</h2>
@@ -23,19 +30,222 @@
       </nav>
     </header>
 
+    <header class="mobile_header">
+      <a href="#"><img src="./resources/images/ic-logo.svg" alt="Colmar Academy Logo - Lion."></a>
+      <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="Desk icon."></a>
+      <a href="#"><img src="./resources/images/ic-online.svg" alt="Desktop monitor icon."></a>
+      <a href="#"><img src="./resources/images/ic-login.svg" alt="Login button"></a>
+    </header>
 
-    <section class="main_banner contain">
-      <img src="./resources/images/banner.jpg" alt="Students reading and studying together outside.">
-      <div class=".content">
-        <h1>Learn something new everyday</h1>
-        <h2>Loren ipsun dolor sit amet, consectetur adipiscing elit.</h2>
-        <span><a id="start_here_button" href="#">Start here</a></span>
-      </div>
+
+<!--
+
+    MAIN BANNER
+
+-->
+    <section id="main_banner" class="">
+      <article class="main_banner contain">
+        <img src="./resources/images/banner.jpg" alt="Students reading and studying together outside.">
+        <div class="content">
+          <h1>Learn something new everyday</h1>
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+          <a id="start_here_button" href="#"><i class="fa fa-info fa-1x"></i>&nbsp; Start here</a>
+        </div>
+      </article>
     </section>
 
 
+<!--
+
+    INFORMATION
+
+-->
+    <section id="information" class="desktop_articles">
+      <article class="contain articles">
+        <div class="left">
+          <img src="./resources/images/information-main.jpg" alt="Student smiling as he reads a book.">
+          <h1>It doesn't hurt to keep practicing</h1>
+          <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquan et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequar ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+          <p id="name">Emanuel, Sr Strategist at Hiring.com</p>
+        </div>
+        <div class="right">
+          <a href="#" class="link"><article id="orientation">
+            <div class="image"><img src="./resources/images/information-orientation.jpg" alt="Bird's eye view of students being take on an orientation."></div>
+            <div class="content">
+              <h2>Orientation date</h2>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <p class="read_more">Read more</p>
+            </div>
+          </article></a>
+          <a href="#" class="link"><article id="campus">
+            <div class="image"><img src="./resources/images/information-campus.jpg" alt="One of the insides of a building on one of Colmar Academy's campuses; hanging lights and map of South America hanging on the wall."></div>
+            <div class="content">
+              <h2>Our campus</h2>
+              <p>Find which campus is close by you</p>
+              <p class="read_more">Read more</p>
+            </div>
+          </article></a>
+          <a href="#" class="link"><article id="guest_lecture">
+            <div class="image"><img src="./resources/images/information-guest-lecture.jpg" alt="Head shot of Oliver Sack."></div>
+            <div class="content">
+              <h2>Our guest lecture</h2>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <p class="read_more">Read more</p>
+            </div>
+          </article></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="information" class="mobile_articles">
+      <article class="articles">
+        <div class="right">
+          <a href="#" class="link"><article id="orientation">
+            <div class="image"><img src="./resources/images/information-orientation-mobile.jpg" alt="Bird's eye view of students being take on an orientation."></div>
+            <div class="content">
+              <h2>Orientation date</h2>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <p class="read_more">Read more</p>
+            </div>
+          </article></a>
+          <a href="#" class="link"><article id="campus">
+            <div class="image"><img src="./resources/images/information-campus-mobile.jpg" alt="One of the insides of a building on one of Colmar Academy's campuses; hanging lights and map of South America hanging on the wall."></div>
+            <div class="content">
+              <h2>Our campus</h2>
+              <p>Find which campus is close by you</p>
+              <p class="read_more">Read more</p>
+            </div>
+          </article></a>
+          <a href="#" class="link"><article id="guest_lecture">
+            <div class="image"><img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Head shot of Oliver Sack."></div>
+            <div class="content">
+              <h2>Our guest lecture</h2>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <p class="read_more">Read more</p>
+            </div>
+          </article></a>
+        </div>
+      </article>
+    </section>
 
 
+<!--
+
+    COURSES
+
+-->
+    <section id="courses" class="desktop_tablet_courses">
+      <div class="courses_center">
+        <h1>Start learning&nbsp;<i class="fa fa-pencil-alt fa-1x"></i></h1>
+        <section class="courses_container">
+
+          <a href="#"><article class="course">
+            <img src="./resources/images/course-software.jpg" alt="iMacs with software pulled up.">
+            <h2>Software engineering</h2>
+            <p class="title">Courses</p>
+            <p>Web Development, Mobile Development, iOT, APIs</p>
+          </article></a>
+
+          <a href="#"><article class="course">
+            <img src="./resources/images/course-computer-art.jpg" alt="iPhone with design on screen.">
+            <h2>Computer art</h2>
+            <p class="title">Courses</p>
+            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+          </article></a>
+
+          <a href="#"><article class="course">
+            <img src="./resources/images/course-design.jpg" alt="Old fashioned camera taking pictures.">
+            <h2>Design</h2>
+            <p class="title">Courses</p>
+            <p>User Experience Design, User Research, Visual Design</p>
+          </article></a>
+
+          <a href="#"><article class="course">
+            <img src="./resources/images/course-data.jpg" alt="Laptop computer with graphs and data.">
+            <h2>Data</h2>
+            <p class="title">Courses</p>
+            <p>Data Science, Big Data, SQL, Data Visualization</p>
+          </article></a>
+
+          <a href="#"><article class="course">
+            <img src="./resources/images/course-business.jpg" alt="Wooden chess board and pieces.">
+            <h2>Business</h2>
+            <p class="title">Courses</p>
+            <p>Product Development, Business Development, Startup</p>
+          </article></a>
+
+          <a href="#"><article class="course">
+            <img src="./resources/images/course-marketing.jpg" alt="Touch screen watch being used.">
+            <h2>Marketing</h2>
+            <p class="title">Courses</p>
+            <p>Analytics, Content Marketing, Mobile Marketing</p>
+          </article></a>
+
+        </section>
+      </div>
+    </section>
+
+    <section id="courses" class="mobile_courses">
+      <h1>Start learning&nbsp;<i class="fa fa-pencil-alt fa-1x"></i></h1>
+
+      <section class="courses_container">
+        <a href="#"><h2>Software engineering</h2></a>
+        <a href="#"><h2>Computer art</h2></a>
+        <a href="#"><h2>Design</h2></a>
+        <a href="#"><h2>Data</h2></a>
+        <a href="#"><h2>Business</h2></a>
+        <a href="#"><h2>Marketing</h2></a>
+      </section>
+    </section>
+
+
+<!--
+
+    THESIS
+
+-->
+<section id="thesis" class="thesis">
+  <article class="contain articles">
+    <div class="left" id="thesis_left">
+      <h1 id="thesis_exhibits">Thesis exhibits</h1>
+      <video src="./resources/videos/thesis.mp4" autoplay controls poster="./resources/images/thesis-video-poster.png">
+        Your browser does not support the video tag.
+      </video>
+      <h1>Reimagine urban</h1>
+      <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquan et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequar ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+    </div>
+    <div class="right">
+      <a href="#" class="link"><article id="orientation">
+        <div class="image"><img src="./resources/images/thesis-fisma.jpg" alt="Blue prints and sketches of developing phones."></div>
+        <div class="content">
+          <h2>Fisma: Design and Prototype</h2>
+          <p>Designer showcase of new prototype product</p>
+        </div>
+      </article></a>
+      <a href="#" class="link"><article id="campus">
+        <div class="image"><img src="./resources/images/thesis-now-and-then.jpg" alt="A New York City skyscraper."></div>
+        <div class="content">
+          <h2>Now and then</h2>
+          <p>Research study about New York</p>
+        </div>
+      </article></a>
+    </div>
+  </article>
+</section>
+
+
+<!--
+
+    FOOTER
+
+-->
+<footer class="">
+  <p>&copy; 2018 Colmar Academy. All rights reserved</p>
+  <div>
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+  </div>
+</footer>
 
 
 

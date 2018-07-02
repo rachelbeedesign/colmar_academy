@@ -2,30 +2,64 @@
 
         GENERAL STYLES
 
-*/html {
+*/
+html {
   font-size: 16px;
 }
 
 body {
   font-family: Helvetica;
+  background-color: #fff;
 }
 
 h1 {
-  font-size: ;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
 }
 
 h2 {
-  font-size: ;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Oswald", serif;
 }
 
 p {
-  font-size: 1rem;
+  font-size: .8rem;
+  line-height: 1.5;
+  font-family: "Open Sans"
 }
 
 .contain {
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1000px;
 }
+
+/*
+
+    MOBILE AND DESKTOP
+
+*/
+.mobile {
+  display: none;
+}
+
+.mobile_header {
+  display: none;
+}
+
+.mobile_articles {
+  display: none;
+}
+
+.mobile_courses {
+  display: none;
+}
+
+.mobile_thesis {
+  display: none;
+}
+
 
 /*
 
@@ -38,11 +72,13 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 10;
   top: 0;
   height: 4rem;
   width: calc(100% - 48px);
   padding: 0 1.5rem;
-  background-color: #f5f5f5;
+  color: #f4f5ff;
+  background-color: #8494f4;
 }
 
 header div {
@@ -52,29 +88,38 @@ header div {
 }
 
 header img {
-  height: 2rem;
+  height: 2.5rem;
   width: auto;
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -o-filter: invert(100%);
+  -ms-filter: invert(100%);
+  filter: invert(100%);
 }
 
 header h2 {
-  font-size: ;
+  font-size: 1.25rem;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 header h2 strong {
-  font-weight: bold;
+  font-weight: 600;
+  color: #151d53;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
   margin: 0;
+  color: #151d53;
+  font-size: .9rem;
 }
 
 header nav a {
   padding: .5rem;
   margin: .25rem;
-  background-color: #abcdef;
+  transition: all 75ms ease-in-out 25ms;
 }
 
 #right-option {
@@ -83,63 +128,375 @@ header nav a {
 
 header nav a:link {
   color: ;
-  background-color: ;
+  background-color: #fff;
 }
+
+header nav a:visited {
+  color: ;
+  background-color: #fff;
+}
+
 header nav a:hover {
   color: ;
-  background-color: #aabbcc;
-  text-decoration: underline;
+  background-color: #cdd3fc;
+  text-decoration: ;
 }
 header nav a:active {
   color: ;
-  background-color: ;
+  background-color: #cdd3fc;
 }
-header nav a:visited {
-  color: ;
-  background-color: ;
-}
+
+
 
 /*
 
         MAIN BANNER SECTION
 
 */
+#main_banner {
+  position: relative;
+  top: 4rem;
+}
+
 .main_banner {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+  background-color: #fff;
   padding: 2rem 1.5rem;
-  background-color: #;
 }
 
 .main_banner img {
   max-width: 60%;
+  position: relative;
+  top: ;
 }
 
 .main_banner .content {
   padding: 1.5rem;
+  padding-right: 0;
   text-align: left;
+  max-width: 20rem;
 }
 
 .main_banner .content h1 {
-  color: ;
+  color: #;
 }
 
 .main_banner .content h2 {
-  color: ;
+  color: #383838;
+  margin: 1.5rem 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 #start_here_button {
-  max-width: ;
-  min-width: ;
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto 0 auto;
   padding: .5rem;
+
   text-align: center;
   color: #fff;
-  background-color: #abcdef;
+  background-color: #ef5445;
+  transition: all 200ms ease-out 75ms;
+}
+
+#start_here_button:link {
+  font-size: 1rem;
+  background-color: #ef5445;
+}
+
+#start_here_button:visited {
+  font-size: 1rem;
+  background-color: #ef5445;
+}
+
+#start_here_button:hover {
+  font-size: 1.15rem;
+  font-weight: 500;
+  background-color: #d63324;
+}
+
+#start_here_button:active {
+  font-size: 1rem;
+  background-color: #d63324;
 }
 
 
 
+
+/*
+
+        GENERAL ARTICLE SECTION FORMATTING SECTION
+        TO BE USED WITH:
+          "INFORMATION"
+          "THESIS"
+
+
+*/
+.articles {
+  display: flex;
+  flex-direction: row;
+  padding: 2rem 1.5rem;
+  background-color: #e1e1e1;
+}
+
+/*
+    LEFT
+*/
+.articles .left {
+  width: calc(60% - 3rem);
+  padding: 2rem 1.5rem;
+}
+
+.articles .left img {
+  width: 100%;
+  height: auto;
+}
+
+.articles .left video {
+  width: 100%;
+  height: auto;
+}
+
+.articles .left h1 {
+  margin-top: 2rem;
+  color: #000;
+}
+
+.articles .left p {
+  margin-top: 1.5rem;
+}
+
+/*
+    RIGHT
+*/
+.articles .right {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 2rem 0;
+}
+
+.articles .right article {
+  width: calc(100% - 2rem);
+  transition: all 150ms ease-in 50ms;
+}
+
+.articles .right article {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: #6176ef;
+  color: #fff;
+}
+
+.articles .right a:nth-child(1n+2) {
+  margin: .5rem 0 0 0;
+}
+
+.articles .right article:link {
+  background-color: #f3b235;
+}
+
+.articles .right article:visited {
+  background-color: #f3b235;
+}
+
+.articles .right article:hover {
+  background-color: #3c57f1;
+}
+
+.articles .right article:active {
+  background-color: #eca110;
+}
+
+.articles .right .image {
+  display: block;
+  width: 35%;
+  height: 100%;
+}
+
+.articles .right img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.articles .right .content {
+  width: calc(65% - 1.5rem);
+  padding-left: 1.5rem;
+}
+
+.articles .right .content h2 {
+  padding-top: 1.2rem;
+}
+
+.articles .right .content p {
+  margin-top: .5rem;
+}
+
+.read_more {
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+/*
+
+        INFORMATION SECTION
+
+*/
+#information {
+  background-color: ;
+  position: relative;
+  top: 4rem;
+}
+
+#name {
+  font-size: .7rem;
+}
+
+
+/*
+
+        COURSES SECTION
+
+*/
+#courses {
+  position: relative;
+  top: 4rem;
+}
+
+.courses_center {
+  margin: 0 auto;
+  max-width: calc(1000px - 5rem);
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #d63324;
+  background-color: #fff;
+}
+
+.courses_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.courses_container a {
+  width: calc(33% - calc(4rem /3));
+  transition: all 100ms ease-in;
+}
+
+.courses_container a:nth-child(3n + 2) {
+  margin: 0 2rem;
+}
+
+.courses_container a:nth-child(1n + 4) {
+  margin-top: 2rem;
+}
+
+.courses_container a:link {
+  background-color: #cdd3fc;
+  color: #000;
+}
+
+.courses_container a:visited {
+  background-color: #cdd3fc;
+  color: #000;
+}
+
+.courses_container a:hover {
+  background-color: #dce0d4;
+  color: #000;
+}
+
+.courses_container a:active {
+  background-color: #dce0d4;
+  color: #000;
+}
+
+
+
+.courses_container .course {
+  flex-shrink: 1;
+  text-align: left;
+}
+
+.courses_container .course img {
+  width: 100%;
+}
+
+.courses_container .course h2 {
+  margin: 1rem 1rem 0 1rem;
+}
+
+.courses_container .course p {
+  margin: .5rem 1rem 0 1rem;
+}
+
+.courses_container .course :nth-child(4) {
+  margin-bottom: 1.5rem;
+}
+
+
+/*
+
+        THESIS SECTION
+
+*/
+#thesis {
+  position: relative;
+  top: 4rem;
+  background-color: ;
+}
+
+#thesis_exhibits {
+  display: none;
+}
+
+
+/*
+
+        FOOTER SECTION
+
+*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 4rem;
+  width: calc(100% - 3rem);
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  font-size: .8rem;
+  background-color: #cdd3fc;
+  border-top: 1px solid #a6b1f5;
+}
+
+footer a:nth-child(1) {
+  padding-right: 1rem;
+}
+
+footer a:link {
+  color: #;
+}
+
+footer a:hover {
+  color: #;
+}
+
+footer a:visited {
+  color: #;
+}
+
+footer a:active {
+  color: #;
+}
 
 
 

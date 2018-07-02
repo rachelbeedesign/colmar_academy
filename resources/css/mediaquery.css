@@ -1,0 +1,288 @@
+/* **********
+
+        TABLET LARGE - 800PX MAX
+
+********** */
+@media only screen and (max-width: 800px) {
+  /*
+        ARTICLES
+  */
+  .desktop_articles .articles {
+    flex-direction: column;
+    width: calc(100% - 3rem);
+    padding: 2rem 1.5rem;
+    align-items: center;
+  }
+
+  .desktop_articles .articles .left {
+    width: inherit;
+    max-width: 500px;
+  }
+
+  .desktop_articles .articles .right {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    width: inherit;
+    width: calc(100% - 0rem);
+    padding: 0;
+
+  }
+
+  .desktop_articles .articles .right a:nth-child(1n + 2) {
+    margin:.25rem;
+  }
+
+  .desktop_articles .articles .right a {
+    width: inherit;
+    width: calc(50% - 3rem);
+    margin: ;
+    margin: .25rem;
+    background-color: darkblue;
+  }
+
+  .desktop_articles .articles .right article {
+    width: calc(100% - 2rem);
+    padding: 1rem;
+    height: calc(100% - 2rem);
+  }
+}
+
+
+/* **********
+
+        TABLET SMALL - 686PX MAX
+
+
+********** */
+@media only screen and (max-width: 686px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+
+  /*
+        HEADER
+  */
+  .mobile_header {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .mobile_header img {
+    height: 2rem;
+  }
+
+
+  /*
+        MAIN BANNER
+  */
+  .main_banner {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+  }
+
+  .main_banner img {
+    max-width: inherit;
+    width: 100%;
+  }
+
+  .main_banner .content {
+    max-width: inherit;
+    width: calc(100% - 3rem);
+    padding: 0 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+
+  /*
+        ARTICLES/INFORMATION
+  */
+  .desktop_articles {
+    display: none;
+  }
+
+  .mobile_articles {
+    display: inherit;
+  }
+
+  .mobile_articles .articles {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile_articles .articles .right {
+    width: 100%;
+  }
+
+  .mobile_articles .articles .right a {
+    width: calc(100% - 4rem);
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 0 2rem;
+  }
+
+  .mobile_articles .articles .right article {
+    flex-direction: row;
+  }
+
+  .mobile_articles .articles .right .image {
+    width: 100%;
+  }
+
+
+  /*
+        COURSES
+  */
+  .courses_container a {
+    width: calc(50% - 1rem);
+  }
+
+  .courses_container a:nth-child(3n + 2) {
+    margin: 0;
+  }
+
+  .courses_container a:nth-child(1n + 4) {
+    margin-top: 0;
+  }
+
+  .courses_container a:nth-child(2n + 1) {
+    margin: 2rem 1rem 0 0;
+  }
+
+  .courses_container a:nth-child(2n +2) {
+    margin: 2rem 0 0 1rem;
+  }
+
+
+  /*
+        THESIS
+  */
+  .thesis .right {
+    display: none;
+  }
+
+#thesis_left {
+    width: calc(100% - 3rem);
+  }
+}
+
+/* **********
+
+        TABLET AND MOBILE - 570PX MAX
+
+
+********** */
+@media only screen and (max-width: 570px) {
+  .mobile_articles .articles .right article {
+    flex-direction: column;
+  }
+}
+
+
+/* **********
+
+        MOBILE SMALL - 475PX MAX
+
+
+********** */
+@media only screen and (max-width: 475px) {
+  /*
+    ARTICLES
+  */
+  .mobile_articles .articles .right a {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+
+  /*
+    COURSES
+  */
+  .desktop_tablet_courses {
+    display: none;
+  }
+
+  .mobile_courses {
+    display: inherit;
+  }
+
+  .mobile_courses .courses_container {
+    margin-bottom: 2rem;
+  }
+
+  .mobile_courses h1 {
+    text-align: center;
+    color: #d63324;
+    margin-top: 2rem;
+  }
+
+  .courses_container a {
+    width: 100%;
+  }
+
+  .mobile_courses a {
+    width: calc(100% -4rem);
+    margin: .5rem 1rem 0 1rem;
+    padding: 1rem;
+  }
+
+  .courses_container a:nth-child(3n + 2) {
+    margin: .5rem 1rem 0 1rem;
+  }
+
+  .courses_container a:nth-child(1n + 4) {
+    margin: .5rem 1rem 0 1rem;
+  }
+
+  .courses_container a:nth-child(2n + 1) {
+    margin: .5rem 1rem 0 1rem;
+  }
+
+
+  /*
+    THESIS
+  */
+  #thesis_left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #thesis_exhibits {
+    display: inherit;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .thesis h1 {
+    display: none;
+  }
+
+  .thesis p {
+    display: none;
+  }
+
+
+  /*
+    FOOTER
+  */
+  footer {
+    padding: 2.5rem 1.5rem 1rem 1.5rem;
+  }
+
+  footer div {
+    display: none;
+  }
+}
